@@ -41,16 +41,16 @@ function LandingPage() {
 
         <div className="border py-28 px-10">
           <div className="mb-10">
-            <p className="text-4xl font-bold text-[#333333]">
+            <p className="text-3xl sm:text-4xl font-bold text-[#333333]">
               Experience that grows with your knowledge.
             </p>
-            <p className="text-[#2A8e9e]">
+            <p className="text-[#2A8e9e] text-sm sm:text-base">
               Design your learning journey with personalized courses and
               streamlined progress tracking for continuous growth.
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           <div className="">
           <div className="flex items-center">
           <GiGraduateCap size={25} className="bg-[#2A8e9e] mr-2 p-1 rounded shadow text-white" />

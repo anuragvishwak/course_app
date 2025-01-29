@@ -36,7 +36,15 @@ console.log(route.pathname)
                   Home
                 </p>
               </Link>
-              <p className="">Courses</p>
+              <Link to={'/courses'}>
+          <p
+            className={`${
+              route.pathname === "/courses"? "text-[#2A8e9e]" : "text-[#333333]"
+            }`}
+          >
+            Course
+          </p>
+        </Link>
               <p>Bootcamp</p>
               <p>Career Path</p>
               <p>Help Center</p>

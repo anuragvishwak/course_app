@@ -7,7 +7,7 @@ function Footer() {
         <p className="text-3xl text-white font-bold italic">Sikho</p>
       </div>
 
-      <div className="flex justify-between my-10 mx-10">
+      <div className="sm:flex justify-between m-5 sm:m-10">
         <div className="flex flex-col w-80">
           <p className="text-lg font-bold text-white">Stay Updated</p>
           <input
@@ -18,7 +18,7 @@ function Footer() {
             Subscribe
           </button>
         </div>
-        <div className="flex text-white justify-between w-96">
+        <div className="flex text-white justify-between mt-5 sm:mt-0 sm:w-96">
           <div>
             <p className="text-lg font-bold">Company</p>
             <p>About</p>
@@ -46,7 +46,7 @@ function Footer() {
       </div>
 
       <hr className="my-2"/>
-      <div className="flex text-white items-end justify-between">
+      <div className="sm:flex text-white items-end justify-between">
         <div>
           <p className="font-bold">10X your workflow with Us</p>
           <p className="text-sm">
