@@ -52,7 +52,7 @@ function Courses() {
         </div>
         
         
-        <div className="p-5 sm:p-10">
+        <div className="p-5">
           <Products />
         </div>
       </div>
