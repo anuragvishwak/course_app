@@ -30,37 +30,43 @@ function Products() {
   return (
     <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {coursesDetails.map((course) => (
-        <div className="bg-white border border-gray-300 p-3 rounded shadow" key={course.id}>
+        <div
+          className="bg-white border border-gray-300 p-3 rounded shadow"
+          key={course.id}
+        >
           <div className="flex items-center justify-between">
-            <p className="text-xl font-bold">{course.courseName}</p>
+            <p className="text-xl font-bold">{course.courseTitle}</p>
             <p className="text-[#333333] bg-gray-50 py-1 px-4 rounded-full">
               {course.courseLevel}
             </p>
           </div>
 
-          <p>{course.courseType}</p>
+          <p className="text-sm text-gray-400">
+            {course.category}, {course.subCategory}
+          </p>
 
           <p>{course.courseDuration}</p>
 
           <div className="bg-[#f5feff] p-3 rounded-xl border border-[#2A8e9e] my-3">
             <p className="font-semibold text-[#2A8e9e]">Description</p>
-           <p className="text-sm text-[#2A8e9e] line-clamp-2">
-           {course.courseDescription}
-           </p>
+            <p className="text-sm text-[#2A8e9e] line-clamp-2">
+              {course.courseDescription}
+            </p>
           </div>
 
           <div className="flex justify-between items-center">
             <div className="flex font-bold text-[#2A8e9e]">
-              <FaRupeeSign className="mr-1 mt-0.5"/>
-              {course.coursePrice}/-</div>
-           <div className="">
-            <button className="text-[#333333] mr-2 border border-[#333333] px-4 py-1 rounded">
-              View Details
-            </button>
-           <button className="text-white bg-[#333333] px-4 py-1 rounded">
-              Enroll
-            </button>
-           </div>
+              <FaRupeeSign className="mr-1 mt-0.5" />
+              {course.coursePrice}/-
+            </div>
+            <div className="">
+              <button className="text-[#333333] mr-2 border border-[#333333] px-4 py-1 rounded">
+                View Details
+              </button>
+              <button className="text-white bg-[#333333] px-4 py-1 rounded">
+                Enroll
+              </button>
+            </div>
           </div>
         </div>
       ))}
